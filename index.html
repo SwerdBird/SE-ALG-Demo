@@ -22,7 +22,7 @@
   Last name: <input type = "text" name = "lname" />
  </p>
  <p>
-  <label for="country">Destination Country</label><span style="display: inline; float: none;">:</span>      
+  <label for="country">Destination Country</label><span style="display: inline; float: none;" name = "country">:</span>      
         
             <select id="country" name="country" class="form-control">
                 <option value="Afghanistan">Afghanistan</option>
@@ -280,14 +280,17 @@
  <p>
   Phone Number: <input type = "text" name = "phone" />
  </p>
+  <p hidden>
+  <input type = "hidden" name = "smsSubscribtion" value = false> 
+ </p>
  <p>
   <input type = "checkbox" name = "smsSubscribtion" value = "true"> Sign me up for SMS deal notifications!
  </p>
  <p>
   Email: <input type = "text" name = "email" />
  </p>
-      <p hidden>
-  <input type = "hidden" name = "emailSubscribtion" value = unchecked> 
+  <p hidden>
+  <input type = "hidden" name = "emailSubscribtion" value = false> 
  </p>
   <p>
   <input type = "checkbox" name = "emailSubscribtion" value = "true"> Sign me up for email deal notifications!
