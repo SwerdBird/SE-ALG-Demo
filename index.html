@@ -42,6 +42,7 @@ form.onsubmit = function(event){
         //open the request
         xhr.open('POST','https://capture.eu-west-1.nest.messagebird.com/webhooks/cb34100c-c841-4284-9005-66332d274c4b/cffc7856-1cf1-417e-99d0-2dca374cb674')
         xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.setRequestHeader("Authorization", "AccessKey gDBRC8fp86JFgR4HNpcP6EcIhV5XwbFO7oIp");
         //send the form data
         xhr.send(JSON.stringify(Object.fromEntries(formData)));
         xhr.onreadystatechange = function() {
