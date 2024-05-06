@@ -16,10 +16,10 @@
      <legend>Booking Details</legend>
       <img src="relax.png" style="width: 75%; height: 45%; float: right;">
       <p>
-        <label for="fname"> </label>First name<span style="color: red !important; display: inline; float: none;">*</span>:<input type = "text" name = "fname" placeholder = "Peter" required/>
+        <label for="fname"> </label>First name<span style="color: red !important; display: inline; float: none;">*</span>: <input type = "text" name = "fname" placeholder = "Peter" required/>
    </p>
  <p>
-  Last name: <input type = "text" name = "lname" placeholder = "Parker" required />
+  <label for="lname"> </label>Last name<span style="color: red !important; display: inline; float: none;">*</span>: <input type = "text" name = "lname" placeholder = "Parker" required />
  </p>
  <p>
   <label for="country">Destination Country</label><span style="display: inline; float: none;" name = "country">:</span>      
@@ -280,7 +280,7 @@
   Return: <input type = "date" name = "return" />
  </p>
  <p>
-  <label for = "phone"> Phone Number:<br /> <small>(Format +12223334545):</small></label> <input type = "tel" name = "phone" placeholder = "+17049356782" required pattern = "[+]{1}[1]{1}[0-9]{10}" />
+  <label for = "phone"> Phone Number</label><span style="color: red !important; display: inline; float: none;">*</span>:<br /> <small>(Format +12223334545):</small></label> <input type = "tel" name = "phone" placeholder = "+17049356782" required pattern = "[+]{1}[1]{1}[0-9]{10}" />
  </p>
   <p hidden>
   <input type = "hidden" name = "smsSubscribtion" value = false> 
@@ -289,7 +289,7 @@
   <input type = "checkbox" name = "smsSubscribtion" value = "true"> Sign me up for SMS deal notifications!
  </p>
  <p>
-  Email: <input type = "email" name = "email" placeholder = "test@gmail.com" required />
+  <label for ="email"></label>Email<span style="color: red !important; display: inline; float: none;">*</span>: <input type = "email" name = "email" placeholder = "test@gmail.com" required />
  </p>
   <p hidden>
   <input type = "hidden" name = "emailSubscribtion" value = false> 
